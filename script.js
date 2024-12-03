@@ -277,3 +277,5 @@ window.addEventListener("keyup", ({ keyCode }) => {
       break;
   }
 });
+
+const test = "hallo";
