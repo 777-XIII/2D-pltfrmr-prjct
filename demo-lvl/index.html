@@ -31,22 +31,23 @@
     }
   </style>
   <canvas style="image-rendering: pixelated"></canvas>
-  <script src="./data/l_Sky_Ocean.js"></script>
-  <script src="./data/l_Bramble.js"></script>
-  <script src="./data/l_Back_Tiles.js"></script>
-  <script src="./data/l_Front_Tiles.js"></script>
+  <script src="./data/l_Sky_Ocean.js"></script> <!-- background file -->
+  <script src="./data/l_Bramble.js"></script> <!-- background file 2nd layer -->
+  <script src="./data/l_Back_Tiles.js"></script> <!-- background file for non collision tiles -->
+  <script src="./data/l_Front_Tiles.js"></script> <!-- file for collision tiles -->
   <script src="./data/l_Decorations.js"></script>
-  <script src="./data/l_Front_Tiles_2.js"></script>
-  <script src="./data/l_Gems.js"></script>
-  <script src="./data/l_Collisions.js"></script>
-  <script src="./data/collisions.js"></script>
-  <script src="./js/utils.js"></script>
-  <script src="./classes/CollisionBlock.js"></script>
-  <script src="./classes/Platform.js"></script>
-  <script src="./classes/Player.js"></script>
+  <script src="./data/l_Front_Tiles_2.js"></script> <!-- platforms with onesided collision -->
+  <script src="./data/l_Gems.js"></script> <!-- collectables -->
+  <script src="./data/l_Collisions.js"></script> 
+  <script src="./data/collisions.js"></script> <!-- collision data for tiles -> ground/platforms -->
+  
+  <script src="./js/utils.js"></script> <!-- utility functions -->
+  <script src="./classes/CollisionBlock.js"></script> <!-- collision block class -->
+  <script src="./classes/Platform.js"></script> <!-- platform class -->
+  <script src="./classes/Player.js"></script> <!-- player class -->
 
-  <script src="./js/index.js"></script>
-  <script src="./js/eventListeners.js"></script>
+  <script src="./js/index.js"></script> <!-- main game loop -->
+  <script src="./js/eventListeners.js"></script> <!-- event listeners for player movement -->
 
 
 </body>

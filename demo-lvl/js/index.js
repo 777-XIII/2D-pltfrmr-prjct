@@ -1,10 +1,13 @@
-const canvas = document.querySelector("canvas");
-const c = canvas.getContext("2d");
-const dpr = window.devicePixelRatio || 1;
+const canvas = document.querySelector("canvas"); // Get the canvas from the HTML
+const c = canvas.getContext("2d"); // Get the 2D context from the canvas 
+const dpr = window.devicePixelRatio || 1; // Get the device pixel ratio
 
+// set the canvas pixel ratio to the device pixel ratio
+// dpr = device pixel ratio
 canvas.width = 1024 * dpr;
 canvas.height = 576 * dpr;
 
+// contains the layer data
 const layersData = {
   l_Sky_Ocean: l_Sky_Ocean,
   l_Bramble: l_Bramble,
@@ -16,6 +19,7 @@ const layersData = {
   l_Collisions: l_Collisions,
 };
 
+// contains the tileset data (image, saurce and tile size)
 const tilesets = {
   l_Sky_Ocean: { imageUrl: "./images/decorations.png", tileSize: 16 },
   l_Bramble: { imageUrl: "./images/decorations.png", tileSize: 16 },
