@@ -1,3 +1,4 @@
+////////////CONTROLS////////////
 window.addEventListener('keydown', (event) => {
   switch (event.key) {
     case 'w':
@@ -25,8 +26,8 @@ window.addEventListener('keyup', (event) => {
 })
 
 // On return to game's tab, ensure delta time is reset
-document.addEventListener('visibilitychange', () => {
-  if (!document.hidden) {
-    lastTime = performance.now()
-  }
-})
+// document.addEventListener('visibilitychange', () => {
+//   if (!document.hidden) {
+//     lastTime = performance.now()
+//   }
+// })
